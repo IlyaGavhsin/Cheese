@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cheese3"
         mc:Ignorable="d"
-        Title="MainWindow" Background="#FFFCFCFC" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="RightToLeft">
+        Title="MainWindow" Background="#FFFCFCFC" VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="RightToLeft">
     <Window.Resources>
 
         <Style x:Key="Field">
@@ -24,11 +24,42 @@
             <Setter Property="Control.RenderTransformOrigin" Value="0.5,0.5"/>
         </Style>
     </Window.Resources>
-    <Grid>
-        <DockPanel x:Name="groupCells" Width="720" Height="720" Background="#FFEDEDED" >
-            <UniformGrid x:Name="cheeseCells" Background="#FFEBEBEB" VerticalAlignment="Center"/>
+    <Grid Width="800" Height="800" Background="#FFF6F6F6" >
+        <DockPanel x:Name="groupCells" Width="600" Height="600" Background="#FFEDEDED" HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <UniformGrid x:Name="cheeseCells" Background="#FFEBEBEB"/>
         </DockPanel>
-        <Label x:Name="Word" Content="A" HorizontalAlignment="Left" Margin="957,855,0,0" VerticalAlignment="Top" Height="90" Width="90" Background="{x:Null}"/>
+        <Label Content="8" HorizontalAlignment="Left" Margin="700,625,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="7" HorizontalAlignment="Left" Margin="700,550,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="6" HorizontalAlignment="Left" Margin="700,474,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="5" HorizontalAlignment="Left" Margin="700,399,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="4" HorizontalAlignment="Left" Margin="700,325,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="3" HorizontalAlignment="Left" Margin="700,250,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="2" HorizontalAlignment="Left" Margin="700,175,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="1" HorizontalAlignment="Left" Margin="700,100,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="A" HorizontalAlignment="Left" Margin="625,25,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="B" HorizontalAlignment="Left" Margin="550,25,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="C" HorizontalAlignment="Left" Margin="475,25,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="D" HorizontalAlignment="Left" Margin="400,25,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="E" HorizontalAlignment="Left" Margin="325,25,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="F" HorizontalAlignment="Left" Margin="250,25,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="G" HorizontalAlignment="Left" Margin="175,25,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="H" HorizontalAlignment="Left" Margin="100,25,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="8" HorizontalAlignment="Left" Margin="20,625,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="7" HorizontalAlignment="Left" Margin="20,550,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="6" HorizontalAlignment="Left" Margin="20,474,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="5" HorizontalAlignment="Left" Margin="20,399,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="4" HorizontalAlignment="Left" Margin="20,325,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="3" HorizontalAlignment="Left" Margin="20,250,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="2" HorizontalAlignment="Left" Margin="20,175,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="1" HorizontalAlignment="Left" Margin="20,100,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="A" HorizontalAlignment="Left" Margin="625,700,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="B" HorizontalAlignment="Left" Margin="550,700,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="C" HorizontalAlignment="Left" Margin="475,700,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="D" HorizontalAlignment="Left" Margin="400,700,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="E" HorizontalAlignment="Left" Margin="325,700,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="F" HorizontalAlignment="Left" Margin="250,700,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="G" HorizontalAlignment="Left" Margin="175,700,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
+        <Label Content="H" HorizontalAlignment="Left" Margin="100,700,0,0" VerticalAlignment="Top" Height="75" Width="75" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" FontWeight="Bold"/>
     </Grid>
 
 </Window>

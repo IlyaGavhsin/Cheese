@@ -25,18 +25,15 @@ namespace Cheese3
         {
             InitializeComponent();
 
-            cheeseCells.Rows = 8;
-            cheeseCells.Columns = 8;
 
-            Button[,] btns = new Button[9, 9];
+            Button[,] btns = new Button[8, 8];
+
             for (int i = 0; i < 8; i++)
             {
                 for (int j = 0; j < 8; j++)
                 {
                     btns[i, j] = new Button();
-                    btns[i, j].Width = 100;
-                    btns[i, j].Height = 100;
-
+                    btns[i, j].Click += new RoutedEventHandler(GreetingBtn_Click);
 
                     if ((i + j) % 2 == 0)
                     {
@@ -47,6 +44,11 @@ namespace Cheese3
 
                     cheeseCells.Children.Add(btns[i, j]);
                 }
+            }
+
+            void GreetingBtn_Click(Object sender, EventArgs e)
+            {
+                
             }
         }
     }
