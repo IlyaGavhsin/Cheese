@@ -21,35 +21,60 @@ namespace Cheese3
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        Button[,] btns;
+        List<string> piecesNames;
+
         public MainWindow()
         {
             InitializeComponent();
 
+            piecesNames = new List<string> { "King", "Queen", "Bishop", "Rook", "Knight" };
+            lisBoxFig.ItemsSource = piecesNames;
 
-            Button[,] btns = new Button[8, 8];
+            btns = new Button[8, 8];
+            CreateField();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CreateField()
+        {
 
             for (int i = 0; i < 8; i++)
             {
                 for (int j = 0; j < 8; j++)
                 {
                     btns[i, j] = new Button();
-                    btns[i, j].Click += new RoutedEventHandler(GreetingBtn_Click);
+                    btns[i, j].Click += new RoutedEventHandler(Field_Click);
 
                     if ((i + j) % 2 == 0)
                     {
                         btns[i, j].Background = Brushes.Black;
+                        btns[i, j].Foreground = Brushes.White;
                     }
                     else
-                        btns[i, j].Background = Brushes.White; 
+                    {
+                        btns[i, j].Background = Brushes.White;
+                        btns[i, j].Foreground = Brushes.Black;
+                    }
 
                     cheeseCells.Children.Add(btns[i, j]);
                 }
             }
-
-            void GreetingBtn_Click(Object sender, EventArgs e)
-            {
-                
-            }
         }
+        private void Field_Click(object sender, RoutedEventArgs e)
+        {
+            Button clickedButton = (Button)sender;
+            int x = Grid.GetColumn(clickedButton);
+            int y = Grid.GetRow(clickedButton);
+
+            string selPieceName = piecesNames[lisBoxFig.SelectedIndex];
+            clickedButton.Content = selPieceName;
+        }
+
     }
 }
